@@ -9,8 +9,7 @@
         "test": "jest",
         "lint": "eslint .",
         "prettier:write": "npx prettier --write **/*.{ts,tsx}",
-        "prepare": "husky install",
-        "commit": "commit"
+        "prepare": "husky install"
     },
     "dependencies": {
         "react": "17.0.2",
@@ -46,8 +45,7 @@
     "lint-staged": {
         "src/**/*.{js,jsx,ts,tsx}": [
             "yarn lint",
-            "yarn prettier:write",
-            "yarn commit"
+            "yarn prettier:write"
         ]
     }
 }
