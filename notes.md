@@ -107,3 +107,26 @@ module.exports = {
   "semi": true
 }
 ```
+
+4. husky and lint-staged
+
+Git has the Hook feature. When some events(commit, push, etc) are triggered on Git, you can use the Hook feature to execute scripts that are configured on the Hook.
+Husky makes you use Git Hook more simply.
+
+lint-staged makes you execute scripts to files that are staged on Git.
+
+```
+yarn add husky lint-staged -D
+
+=> set a script in package.json
+{
+...
+ prepare : "husky install"
+...
+}
+
+yarn perpare => it should create the .husky folder
+
+npx husky add .husky/pre-commit "yarn lint"   => it should create the .husky/pre-commit file and add the script to it
+
+```
