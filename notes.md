@@ -149,12 +149,23 @@ yarn lint-staged
 
 // Let's go one step deeper and add a hook for the post-merge event.
 
-npx husky add .husky/post-merge  "yarn && npx pod-install"   
+npx husky add .husky/post-merge  "yarn && npx pod-install"
 
 ```
-
 
 5. Lint Commit Message
-https://commitlint.js.org/#/
+   https://commitlint.js.org/#/
+
 ```
+yarn add -D  @commitlint/cli @commitlint/config-conventional
+```
+
+```
+echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+```
+
+Create the commit-msg hook
+
+```
+yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'
 ```
