@@ -127,6 +127,28 @@ yarn add husky lint-staged -D
 
 yarn perpare => it should create the .husky folder
 
-npx husky add .husky/pre-commit "yarn lint"   => it should create the .husky/pre-commit file and add the script to it
+// create the .husky/pre-commit file and add the script to it
+npx husky add .husky/pre-commit "yarn lint"
+
+// now let's say we want to run both prettier and eslint on all the files that are staged on Git.
+=> add this in package.json (not as script)
+...
+     "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx}": [
+            "yarn lint",
+            "yarn prettier:write"
+        ]
+    }
+  ...
+
+// now just go the pre-commit file and add the script to it
+
+yarn lint-staged
+
+// DONE 🚀
+
+Let's go one step deeper and add a hook for the post-merge event.
+
+
 
 ```
