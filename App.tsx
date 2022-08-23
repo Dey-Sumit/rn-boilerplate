@@ -1,12 +1,6 @@
 import Demo from '@components/Demo';
 import React from 'react';
-const a = 12;
-const App = () => {
-  return (
-    <>
-      <Demo />
-    </>
-  );
-};
+
+const App = () => <Demo />;
 
 export default App;
