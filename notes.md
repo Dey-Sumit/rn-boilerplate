@@ -147,8 +147,14 @@ yarn lint-staged
 
 // DONE 🚀
 
-Let's go one step deeper and add a hook for the post-merge event.
+// Let's go one step deeper and add a hook for the post-merge event.
+
+npx husky add .husky/post-merge  "yarn && npx pod-install"   
+
+```
 
 
-
+5. Lint Commit Message
+https://commitlint.js.org/#/
+```
 ```
