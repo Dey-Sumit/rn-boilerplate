@@ -169,3 +169,99 @@ Create the commit-msg hook
 ```
 yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'
 ```
+
+---
+
+---
+
+Part 6 : Adding react native navigation
+https://reactnavigation.org/docs/getting-started/
+
+```
+yarn add react-native-screens react-native-safe-area-context
+yarn add @react-navigation/native
+npx pod-install
+
+// Android : go to java/<your package name>/MainActivity.java and add the following code
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(null);
+}
+
+// at the top of the file
+import android.os.Bundle;
+
+// Wrap your app with NavigationContainer
+ import { NavigationContainer } from '@react-navigation/native';
+
+```
+
+https://reactnavigation.org/docs/hello-react-navigation
+
+```
+yarn add @react-navigation/native-stack
+npx pod-install
+```
+
+if you get RnStackHeader not found , then
+
+-   remove react-native-screens package and reinstall it
+-   rebuild the ios app=> yarn ios
+
+---
+
+Cool , so it gives you native navigation but it does not give options to customize the animation . So, for that we will be using the stack navigator
+
+```
+yarn add @react-navigation/stack react-native-gesture-handler && npx pod-install
+```
+
+=> add the following at the top of root/index.js
+
+```
+import 'react-native-gesture-handler';
+```
+
+-   Create a new Profile Screen and add that in the navigation stack
+-   Update the Home Screen to navigate to the Profile Screen
+
+```
+
+const HomeScreen = ({ navigation }) => (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Home Screen</Text>
+        <TouchableOpacity
+            style={{
+                margin: 10,
+                padding: 10,
+                borderWidth: 1
+            }}
+            onPress={() => navigation.navigate('Profile')}
+        >
+            <Text>Go to Profile</Text>
+        </TouchableOpacity>
+    </View>
+);
+
+export default HomeScreen;
+
+```
+
+Let's add typescript in the navigation stack
+
+```
+
+```
+
+---
+
+# Handle Error
+
+## 1. React Native on Apple Silicon M1 - The linked library 'libPods-ProjectName.a' is missing one or more architectures :
+
+=> run xcode with rosetta , clean the build folder , build the app
+
+## 2. Version Incompatibility :
+
+=> watchman watch-del-all && npx react-native start --reset-cache
