@@ -251,8 +251,45 @@ export default HomeScreen;
 Let's add typescript in the navigation stack
 
 ```
+export type RootStackParamsList = {
+    Home: undefined;
+    Profile: { userId: string };
+};
+
+// Home Screen =>
+
+import { RootStackParamsList } from 'types/navigation';
+
+type Props = StackScreenProps<RootStackParamsList, 'Home'>;
+
+ <TouchableOpacity
+            style={{
+                margin: 10,
+                padding: 10,
+                borderWidth: 1
+            }}
+            onPress={() =>
+                navigation.navigate('Profile', {
+                    userId: '123'
+                })
+            }
+        >
+            <Text>Go to Profile</Text>
+        </TouchableOpacity>
+
+ // Profile Screen =>
+
+type Props = StackScreenProps<RootStackParamsList, 'Profile'>;
+const ProfileScreen = ({ route }: Props) => (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Profile Screen</Text>
+        <Text>User ID: {route.params.userId}</Text>
+    </View>
+);
 
 ```
+
+### Add Tabs Navigator
 
 ---
 
