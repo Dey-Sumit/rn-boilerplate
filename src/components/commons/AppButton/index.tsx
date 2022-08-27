@@ -9,7 +9,7 @@ interface Props {
 
 const AppButton = ({ onPressHandler, text }: Props) => (
     <TouchableOpacity style={styles.root} onPress={onPressHandler}>
-        <Text>{text}</Text>
+        <Text style={styles.buttonText}>{text}</Text>
     </TouchableOpacity>
 );
 

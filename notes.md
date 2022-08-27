@@ -174,6 +174,34 @@ yarn husky add .husky/commit-msg 'yarn commitlint --edit $1'
 
 ---
 
+Adding Custom Fonts :
+
+1. download the fonts , make sure the font name is in this format NotoSerif-Bold.ttf not NotoSerifBBold.ttf else in ios it will not work
+
+2. add the font in the root/assets or src/assets folder (wherever)
+
+3. create a react-native.config.js file in the root folder
+
+```
+
+/* eslint-disable comma-dangle */
+module.exports = {
+    project: {
+        ios: {},
+        android: {} // grouped into "project"
+    },
+    assets: ['./assets/fonts/'] // stays the same
+};
+```
+
+next run this command to link the assets folder
+
+```
+npx react-native-asset
+```
+
+---
+
 Part 6 : Adding react native navigation
 https://reactnavigation.org/docs/getting-started/
 

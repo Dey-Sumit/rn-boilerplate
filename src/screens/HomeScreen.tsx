@@ -8,7 +8,14 @@ type Props = StackScreenProps<HomeStackParamsList, 'Home'>;
 
 const HomeScreen = ({ navigation }: Props) => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
+        <Text
+            style={{
+                fontSize: 20,
+                fontFamily: 'LibreBaskerville-Bold'
+            }}
+        >
+            Home Screen
+        </Text>
         <AppButton
             text="Go to Profile"
             onPressHandler={() =>
