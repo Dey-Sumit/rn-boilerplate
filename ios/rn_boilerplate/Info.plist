@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key></key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -36,7 +38,7 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -53,6 +55,7 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
+		<string></string>
 		<string>NotoSerif-Bold.ttf</string>
 		<string>NotoSerif-BoldItalic.ttf</string>
 		<string>NotoSerif-Italic.ttf</string>
@@ -60,6 +63,9 @@
 		<string>LibreBaskerville-Bold.ttf</string>
 		<string>LibreBaskerville-Italic.ttf</string>
 		<string>LibreBaskerville-Regular.ttf</string>
+		<string>Fontisto.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>AntDesign.ttf</string>
 	</array>
 </dict>
 </plist>

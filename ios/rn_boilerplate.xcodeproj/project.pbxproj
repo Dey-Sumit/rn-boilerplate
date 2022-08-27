@@ -12,15 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2AFE679826C44FF89DC52160 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53B7A263513B4FEC8D2F0D45 /* NotoSerif-BoldItalic.ttf */; };
+		2CD4D31F27144DC5829E97AE /* NotoSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37F14F492BBE410491F763AE /* NotoSerif-Regular.ttf */; };
+		33D32DA1A37B4DEA8A1BFBAB /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55D44DD4BDE2471DADD92075 /* LibreBaskerville-Italic.ttf */; };
+		5FFD50B33A8D4C389271D91F /* NotoSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD9BB39F6FE14BDA861558FC /* NotoSerif-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-rn_boilerplate-rn_boilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rn_boilerplate-rn_boilerplateTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		5FFD50B33A8D4C389271D91F /* NotoSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD9BB39F6FE14BDA861558FC /* NotoSerif-Bold.ttf */; };
-		2AFE679826C44FF89DC52160 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53B7A263513B4FEC8D2F0D45 /* NotoSerif-BoldItalic.ttf */; };
-		C0D63FF2044A4847A3F770FE /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 550B550533114F9881C91436 /* NotoSerif-Italic.ttf */; };
-		2CD4D31F27144DC5829E97AE /* NotoSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37F14F492BBE410491F763AE /* NotoSerif-Regular.ttf */; };
-		C7D1C32914CD4854A95DC837 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E3245646349C19BF13F96 /* LibreBaskerville-Bold.ttf */; };
-		33D32DA1A37B4DEA8A1BFBAB /* LibreBaskerville-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55D44DD4BDE2471DADD92075 /* LibreBaskerville-Italic.ttf */; };
 		B733A64EB9554467A3DC67D3 /* LibreBaskerville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67C3B53027BD492BBF5BA854 /* LibreBaskerville-Regular.ttf */; };
+		C0D63FF2044A4847A3F770FE /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 550B550533114F9881C91436 /* NotoSerif-Italic.ttf */; };
+		C7D1C32914CD4854A95DC837 /* LibreBaskerville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E3245646349C19BF13F96 /* LibreBaskerville-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,20 +44,36 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = rn_boilerplate/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rn_boilerplate/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rn_boilerplate-rn_boilerplateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_boilerplate-rn_boilerplateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F14F492BBE410491F763AE /* NotoSerif-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSerif-Regular.ttf"; path = "../assets/fonts/NotoSerif-Regular.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-rn_boilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_boilerplate.debug.xcconfig"; path = "Target Support Files/Pods-rn_boilerplate/Pods-rn_boilerplate.debug.xcconfig"; sourceTree = "<group>"; };
+		53B7A263513B4FEC8D2F0D45 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSerif-BoldItalic.ttf"; path = "../assets/fonts/NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
+		550B550533114F9881C91436 /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSerif-Italic.ttf"; path = "../assets/fonts/NotoSerif-Italic.ttf"; sourceTree = "<group>"; };
+		55D44DD4BDE2471DADD92075 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Italic.ttf"; path = "../assets/fonts/LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rn_boilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_boilerplate.release.xcconfig"; path = "Target Support Files/Pods-rn_boilerplate/Pods-rn_boilerplate.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rn_boilerplate-rn_boilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_boilerplate-rn_boilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_boilerplate-rn_boilerplateTests/Pods-rn_boilerplate-rn_boilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-rn_boilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rn_boilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C3B53027BD492BBF5BA854 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Regular.ttf"; path = "../assets/fonts/LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; };
+		6D0E3245646349C19BF13F96 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Bold.ttf"; path = "../assets/fonts/LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = rn_boilerplate/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-rn_boilerplate-rn_boilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_boilerplate-rn_boilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-rn_boilerplate-rn_boilerplateTests/Pods-rn_boilerplate-rn_boilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		95429E0928BA7E62008FBD7D /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		95429E0A28BA7E62008FBD7D /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		95429E0B28BA7E62008FBD7D /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		95429E0C28BA7E62008FBD7D /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		95429E0D28BA7E62008FBD7D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		95429E0E28BA7E62008FBD7D /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		95429E0F28BA7E62008FBD7D /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		95429E1028BA7E62008FBD7D /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		95429E1128BA7E62008FBD7D /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		95429E1228BA7E62008FBD7D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		95429E1328BA7E62008FBD7D /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		95429E1428BA7E62008FBD7D /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		95429E1528BA7E62008FBD7D /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		95429E1628BA7E62008FBD7D /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		95429E1728BA7E62008FBD7D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		95429E1828BA7E62008FBD7D /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FD9BB39F6FE14BDA861558FC /* NotoSerif-Bold.ttf */ = {isa = PBXFileReference; name = "NotoSerif-Bold.ttf"; path = "../assets/fonts/NotoSerif-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		53B7A263513B4FEC8D2F0D45 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; name = "NotoSerif-BoldItalic.ttf"; path = "../assets/fonts/NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		550B550533114F9881C91436 /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; name = "NotoSerif-Italic.ttf"; path = "../assets/fonts/NotoSerif-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		37F14F492BBE410491F763AE /* NotoSerif-Regular.ttf */ = {isa = PBXFileReference; name = "NotoSerif-Regular.ttf"; path = "../assets/fonts/NotoSerif-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6D0E3245646349C19BF13F96 /* LibreBaskerville-Bold.ttf */ = {isa = PBXFileReference; name = "LibreBaskerville-Bold.ttf"; path = "../assets/fonts/LibreBaskerville-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		55D44DD4BDE2471DADD92075 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; name = "LibreBaskerville-Italic.ttf"; path = "../assets/fonts/LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		67C3B53027BD492BBF5BA854 /* LibreBaskerville-Regular.ttf */ = {isa = PBXFileReference; name = "LibreBaskerville-Regular.ttf"; path = "../assets/fonts/LibreBaskerville-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD9BB39F6FE14BDA861558FC /* NotoSerif-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSerif-Bold.ttf"; path = "../assets/fonts/NotoSerif-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +116,7 @@
 		13B07FAE1A68108700A75B9A /* rn_boilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				95429E0828BA7E62008FBD7D /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -118,6 +135,20 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-rn_boilerplate-rn_boilerplateTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C935B6116024671836ED75C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD9BB39F6FE14BDA861558FC /* NotoSerif-Bold.ttf */,
+				53B7A263513B4FEC8D2F0D45 /* NotoSerif-BoldItalic.ttf */,
+				550B550533114F9881C91436 /* NotoSerif-Italic.ttf */,
+				37F14F492BBE410491F763AE /* NotoSerif-Regular.ttf */,
+				6D0E3245646349C19BF13F96 /* LibreBaskerville-Bold.ttf */,
+				55D44DD4BDE2471DADD92075 /* LibreBaskerville-Italic.ttf */,
+				67C3B53027BD492BBF5BA854 /* LibreBaskerville-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -152,6 +183,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		95429E0828BA7E62008FBD7D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				95429E0928BA7E62008FBD7D /* Fontisto.ttf */,
+				95429E0A28BA7E62008FBD7D /* Octicons.ttf */,
+				95429E0B28BA7E62008FBD7D /* Feather.ttf */,
+				95429E0C28BA7E62008FBD7D /* Entypo.ttf */,
+				95429E0D28BA7E62008FBD7D /* FontAwesome5_Brands.ttf */,
+				95429E0E28BA7E62008FBD7D /* MaterialCommunityIcons.ttf */,
+				95429E0F28BA7E62008FBD7D /* AntDesign.ttf */,
+				95429E1028BA7E62008FBD7D /* Foundation.ttf */,
+				95429E1128BA7E62008FBD7D /* Ionicons.ttf */,
+				95429E1228BA7E62008FBD7D /* FontAwesome5_Solid.ttf */,
+				95429E1328BA7E62008FBD7D /* FontAwesome5_Regular.ttf */,
+				95429E1428BA7E62008FBD7D /* FontAwesome.ttf */,
+				95429E1528BA7E62008FBD7D /* Zocial.ttf */,
+				95429E1628BA7E62008FBD7D /* EvilIcons.ttf */,
+				95429E1728BA7E62008FBD7D /* SimpleLineIcons.ttf */,
+				95429E1828BA7E62008FBD7D /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,21 +217,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		4C935B6116024671836ED75C /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				FD9BB39F6FE14BDA861558FC /* NotoSerif-Bold.ttf */,
-				53B7A263513B4FEC8D2F0D45 /* NotoSerif-BoldItalic.ttf */,
-				550B550533114F9881C91436 /* NotoSerif-Italic.ttf */,
-				37F14F492BBE410491F763AE /* NotoSerif-Regular.ttf */,
-				6D0E3245646349C19BF13F96 /* LibreBaskerville-Bold.ttf */,
-				55D44DD4BDE2471DADD92075 /* LibreBaskerville-Italic.ttf */,
-				67C3B53027BD492BBF5BA854 /* LibreBaskerville-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
