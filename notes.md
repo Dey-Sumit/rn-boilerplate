@@ -207,11 +207,12 @@ npx react-native-asset
 1. Install the package and run pod-install
 2. Ios:
     1. get the fonts folder inside node_modules/react-native-vector-icons/fonts
-    2. open the ios project , put the fonts folder under project-name => project-name => here
-       (same level where the info.plist is located)
+    2. open the ios project , put the fonts folder under project-name => project-name => here (leave as default options in the import options)
+       (same level where the info.plist is located) 
     3. go to info.plist and add the "Fonts provided by application" as a new key (this should be already there if you have any custom fonts added)
     4. add all the fonts one-by-one as item-<number> as key and the name with extension as the value
        or if it seems boring ,add one font(it will create the stricture of the file) and then just open the info.plist file in vs-code add the string here
+
     ```
     ...
     	<string>LibreBaskerville-Regular.ttf</string>
@@ -219,7 +220,14 @@ npx react-native-asset
     	<string>Octicons.ttf</string>
     	<string>AntDesign.ttf</string>
     ...
+    
+
+    5. Rebuild ios and test it as 
     ```
+            <AntDesign name="right" size={20} />
+    ```
+    ```
+Trouble-Shooting:
 
 error: Multiple commands produce '/Users/sumit/Library/Developer/Xcode/DerivedData/rn_boilerplate-bwzqecretfsmzjckgwbyjcndnmiv/Build/Products/Debug-iphonesimulator/rn_boilerplate.app/AntDesign.ttf'
 then delete all the react-native-v-i fonts fonts build-phase => copy bundle resources and re-build
