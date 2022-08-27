@@ -181,6 +181,7 @@ Adding Custom Fonts :
 2. add the font in the root/assets or src/assets folder (wherever)
 
 3. create a react-native.config.js file in the root folder
+   https://mehrankhandev.medium.com/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4
 
 ```
 
@@ -197,9 +198,71 @@ module.exports = {
 next run this command to link the assets folder
 
 ```
-npx react-native-asset
+npx react-native-asset, It should be all
+use the font as fontFamily :
 ```
 
+    buttonText: {
+        fontSize: 20,
+        fontFamily: 'NotoSerif-Bold'
+    }
+
+---
+
+## Add SVG support in react-native (so that we can use svg as icons)
+
+https://blog.logrocket.com/how-to-use-svgs-react-native-tutorial-with-examples/
+
+1.
+
+```
+yarn add react-native-svg && yarn add -D react-native-svg-transformer && npx pod-install
+```
+
+// react-native-svg-transformer enables you to import local SVG files in your React Native project
+
+2.
+
+```
+// ADd this code in HomeScreen.js or anywhere
+import Svg, { Circle } from 'react-native-svg';
+
+<Svg height="50%" width="50%" viewBox="0 0 100 100" >
+    <Circle cx="50" cy="50" r="50" stroke="purple" strokeWidth=".5" fill="violet" />
+</Svg>
+
+// if you face any error like RNSVGCircle was not found then rebuild the project
+=> yarn ios
+=> yarn android
+=> 🚀 it should work
+
+```
+
+3. How to render SVG images and icons in React Native
+   => render remote svg 
+   1.
+   ```
+
+   import { SvgUri } from 'react-native-svg'; -------- <SvgUri width="50%" height="50%" uri="https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/debian.svg" />
+
+```
+```
+
+   => render local svg (eg. icons)
+```
+   => metro.config.js
+   
+
+   ```
+
+
+
+
+
+
+
+
+---
 ---
 
 Part 6 : Adding react native navigation
@@ -209,27 +272,30 @@ https://reactnavigation.org/docs/getting-started/
 yarn add react-native-screens react-native-safe-area-context
 yarn add @react-navigation/native
 npx pod-install
+```
 
 // Android : go to java/<your package name>/MainActivity.java and add the following code
 
 @Override
 protected void onCreate(Bundle savedInstanceState) {
-  super.onCreate(null);
+super.onCreate(null);
 }
 
 // at the top of the file
 import android.os.Bundle;
 
 // Wrap your app with NavigationContainer
- import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 
 ```
 
 https://reactnavigation.org/docs/hello-react-navigation
 
 ```
+
 yarn add @react-navigation/native-stack
 npx pod-install
+
 ```
 
 if you get RnStackHeader not found , then
@@ -242,13 +308,17 @@ if you get RnStackHeader not found , then
 Cool , so it gives you native navigation but it does not give options to customize the animation . So, for that we will be using the stack navigator
 
 ```
+
 yarn add @react-navigation/stack react-native-gesture-handler && npx pod-install
+
 ```
 
 => add the following at the top of root/index.js
 
 ```
+
 import 'react-native-gesture-handler';
+
 ```
 
 -   Create a new Profile Screen and add that in the navigation stack
@@ -257,19 +327,18 @@ import 'react-native-gesture-handler';
 ```
 
 const HomeScreen = ({ navigation }) => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        <TouchableOpacity
-            style={{
+<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+<Text>Home Screen</Text>
+<TouchableOpacity
+style={{
                 margin: 10,
                 padding: 10,
                 borderWidth: 1
             }}
-            onPress={() => navigation.navigate('Profile')}
-        >
-            <Text>Go to Profile</Text>
-        </TouchableOpacity>
-    </View>
+onPress={() => navigation.navigate('Profile')} >
+<Text>Go to Profile</Text>
+</TouchableOpacity>
+</View>
 );
 
 export default HomeScreen;
@@ -279,9 +348,10 @@ export default HomeScreen;
 Let's add typescript in the navigation stack
 
 ```
+
 export type RootStackParamsList = {
-    Home: undefined;
-    Profile: { userId: string };
+Home: undefined;
+Profile: { userId: string };
 };
 
 // Home Screen =>
@@ -290,29 +360,28 @@ import { RootStackParamsList } from 'types/navigation';
 
 type Props = StackScreenProps<RootStackParamsList, 'Home'>;
 
- <TouchableOpacity
-            style={{
+<TouchableOpacity
+style={{
                 margin: 10,
                 padding: 10,
                 borderWidth: 1
             }}
-            onPress={() =>
-                navigation.navigate('Profile', {
-                    userId: '123'
-                })
-            }
-        >
-            <Text>Go to Profile</Text>
-        </TouchableOpacity>
+onPress={() =>
+navigation.navigate('Profile', {
+userId: '123'
+})
+} >
+<Text>Go to Profile</Text>
+</TouchableOpacity>
 
- // Profile Screen =>
+// Profile Screen =>
 
 type Props = StackScreenProps<RootStackParamsList, 'Profile'>;
 const ProfileScreen = ({ route }: Props) => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Profile Screen</Text>
-        <Text>User ID: {route.params.userId}</Text>
-    </View>
+<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+<Text>Profile Screen</Text>
+<Text>User ID: {route.params.userId}</Text>
+</View>
 );
 
 ```
@@ -330,3 +399,4 @@ const ProfileScreen = ({ route }: Props) => (
 ## 2. Version Incompatibility :
 
 => watchman watch-del-all && npx react-native start --reset-cache
+```

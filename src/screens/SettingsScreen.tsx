@@ -3,7 +3,7 @@ import React from 'react';
 import AppButton from 'components/commons/AppButton';
 import { RootTabParamList } from 'types/navigation.types';
 import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-
+import { SvgUri } from 'react-native-svg';
 type Props = BottomTabScreenProps<RootTabParamList, 'Settings'>;
 const SettingsScreen = ({ navigation }: Props) => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -18,6 +18,11 @@ const SettingsScreen = ({ navigation }: Props) => (
                     }
                 })
             }
+        />
+        <SvgUri
+            width="50%"
+            height="50%"
+            uri="https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/debian.svg"
         />
     </View>
 );
