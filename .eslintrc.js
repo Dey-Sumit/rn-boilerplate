@@ -1,11 +1,11 @@
-/* eslint-disable comma-dangle */
 module.exports = {
     root: true,
     extends: [
         '@react-native-community',
         'eslint:recommended',
         'plugin:react/recommended',
-        'plugin:react/jsx-runtime'
+        'plugin:react/jsx-runtime',
+        'plugin:prettier/recommended'
     ],
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint', 'prettier', '@typescript-eslint'],
@@ -17,8 +17,7 @@ module.exports = {
                 'no-shadow': 'off',
                 'no-undef': 'off',
                 'react/jsx-uses-react': 1,
-                'arrow-body-style': ['error'],
-                'comma-dangle': 'off'
+                'arrow-body-style': ['error']
             }
         }
     ]
